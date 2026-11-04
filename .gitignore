@@ -9,3 +9,5 @@ wheels/
 # Virtual environments
 .venv
 .env
+dbt_tut/profiles.yml
+dbt_tut/.user.yml
