@@ -1,0 +1,10 @@
+version: 2
+
+models:
+    - name: bronze_date # Must match the name of the model file excluding the .sql extension
+      config:
+        materialized: table
+
+    - name: bronze_store
+      config:
+        materialized: table
