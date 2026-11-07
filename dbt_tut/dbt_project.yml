@@ -35,3 +35,14 @@ models:
     # This config can be overridden in the properties.yml files for individual model or in model files using the {{ config(...) }} macro.
     bronze:
       +materialized: view
+      schema: bronze
+    silver:
+      +materialized: view
+      schema: silver
+    gold:
+      +materialized: table
+      schema: gold
+
+seeds:
+  dbt_tut:
+    +schema: bronze
