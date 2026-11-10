@@ -3,7 +3,7 @@ snapshots:
     relation: ref('items_dedup')
     config:
       schema: gold
-      database: dbt_tut_dev
+      database: '{{target.catalog}}'
       unique_key: p_id
       strategy: check
       check_cols:

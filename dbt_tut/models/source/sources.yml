@@ -2,7 +2,7 @@ varsion: 2
 
 sources:
   - name: source
-    database: dbt_tut_dev
+    database: '{{target.catalog}}'
     schema: source
     tables:
       - name: fact_sales
