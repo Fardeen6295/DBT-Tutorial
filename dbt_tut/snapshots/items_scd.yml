@@ -1,0 +1,12 @@
+snapshots:
+  - name: items_scd
+    relation: ref('items_dedup')
+    config:
+      schema: gold
+      database: dbt_tut_dev
+      unique_key: p_id
+      strategy: check
+      check_cols:
+        - p_name
+        - price
+      dbt_valid_to_current: "to_date('9999-12-31')"
