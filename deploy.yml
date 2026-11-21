@@ -1,0 +1,19 @@
+  ## Deployment
+
+      Deploy to prod with:
+
+      ```powershell
+      dbt build --target prod
+      ```
+
+      **Before running:** replace every hardcoded catalog name in the project with `{{ target.catalog }}`, so the same code builds into the correct catalog for each target.
+
+      - `dev` builds into the dev catalog.
+      - `prod` builds into the prod catalog.
+
+      sources:
+        - name: source
+          database: "{{ target.catalog }}"
+          schema: source
+          tables:
+            - name: fact_returns

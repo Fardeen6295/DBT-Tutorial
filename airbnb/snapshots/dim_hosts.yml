@@ -3,7 +3,7 @@ snapshots:
       relation: ref('hosts')
       config:
         schema: gold
-        database: airbnb
+        database: '{{target.catalog}}'
         unique_key: host_id
         strategy: timestamp
         updated_at: host_created_at

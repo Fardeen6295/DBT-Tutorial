@@ -2,7 +2,7 @@ varsion:
 
 sources:
   - name: src_airbnb
-    database: airbnb
+    database: '{{target.catalog}}'
     schema: source
     tables:
       - name: bookings
