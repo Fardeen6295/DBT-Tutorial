@@ -1,0 +1,10 @@
+varsion: 2
+
+sources:
+  - name: src_airbnb
+    database: airbnb
+    schema: source
+    tables:
+      - name: bookings
+      - name: hosts
+      - name: listings
