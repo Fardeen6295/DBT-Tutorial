@@ -10,4 +10,5 @@ wheels/
 .venv
 .env
 dbt_tut/profiles.yml
+airbnb/profiles.yml
 dbt_tut/.user.yml

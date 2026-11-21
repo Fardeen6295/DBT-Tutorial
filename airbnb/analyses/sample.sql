@@ -1,2 +1,2 @@
 SELECT * FROM
-{{ref("bronze_listings")}}
+{{ref("silver_listings")}}
